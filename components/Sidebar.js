@@ -5,7 +5,7 @@ import {BellIcon, BookmarkIcon, ClipboardIcon, DotsCircleHorizontalIcon, DotsHor
 
 export default function Sidebar () {
   return (
-    <div className="hidden sm:flex flex-col p-2 xl:items-start fixed h-full"> 
+    <div className="hidden sm:flex flex-col p-2 xl:items-start fixed h-full xl:ml-24"> 
         
         {/* Twitter Logo */}
         <div className="hoverEffect p-0 hover:bg-blue-100 xl:px-l">
@@ -13,6 +13,7 @@ export default function Sidebar () {
              width="50" 
              height="50" 
              src="https://help.twitter.com/content/dam/help-twitter/brand/logo.png"/>
+             <Image/>
         </div>
 
         {/* Menu */}
@@ -40,7 +41,7 @@ export default function Sidebar () {
                 <h4 className="font-bold">Nelvim John Anoc</h4>
                 <p className="text-gray-500">@StinkyN</p>
             </div>
-            <DotsHorizontalIcon className="h-5 xl:ml-8"/>
+            <DotsHorizontalIcon className="h-5 xl:ml-8 hidden xl:inline"/>
         </div>
     </div>
   )
