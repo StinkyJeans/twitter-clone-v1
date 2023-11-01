@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Sidebar from '../../components/Sidebar'
 import Feed from '../../components/Feed'
+import Widgets from '../../components/Widgets'
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='flex min-h-screen mx-auto '>
+      <main className='flex min-h-screen mx-auto pt-1'>
 
         {/* Sidebar */}
 
@@ -21,7 +22,7 @@ export default function Home() {
         <Feed/>
 
         {/* Widgets */}
-
+        <Widgets/>
 
         {/* Modal */}
 
