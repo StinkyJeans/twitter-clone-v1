@@ -42,7 +42,10 @@ export default function Post({post}) {
     if(window.confirm("Are you sure you want to delete this post?")){
 
       deleteDoc(doc(db, "posts", post.id))
-      deleteObject(ref(storage, `posts/${post.id}/image`))
+      if(post.data().image){
+
+        deleteObject(ref(storage, `posts/${post.id}/image`))
+      }
     }
   }
 
@@ -74,7 +77,9 @@ export default function Post({post}) {
 
         {/* post image */}
 
-        <img className='rounded-2xl mr-2'src={post.data().image} alt="post"/>
+        
+
+        <img className='rounded-2xl mr-2'src={post?.data()?.image} alt=""/>
 
 
 
