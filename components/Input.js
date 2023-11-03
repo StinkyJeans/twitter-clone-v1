@@ -24,7 +24,7 @@ export default function Input() {
       name: session.user.name,
       username: session.user.username,
     });
-    const imageRef = ref(storage, `post/${docRef.id}/image`);
+    const imageRef = ref(storage, `posts/${docRef.id}/image`);
     if(selectedFile) {
       await uploadString(imageRef, selectedFile, "data_url").then(async()=> {
         const downloadUrl = await getDownloadURL(imageRef);
