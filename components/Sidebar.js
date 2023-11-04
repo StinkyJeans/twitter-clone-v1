@@ -21,7 +21,7 @@ export default function Sidebar () {
         {/* Menu */}
 
         <div className=" mt-4 mb-2.5 xl:items-start">
-            <SidebarMenuItem text='Home' Icon={HomeIcon} active/>
+            <SidebarMenuItem  text='Home' Icon={HomeIcon} active/>
             <SidebarMenuItem text='Explore' Icon={HashtagIcon}/>
             {session && (
                 <>
