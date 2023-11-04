@@ -34,7 +34,7 @@ export default function PostPage({newsResults, randomUsersResults}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='flex min-h-screen mx-auto pt-1'>
+      <main className='flex min-h-screen max-w-7xl mx-auto pt-1'>
 
         {/* Sidebar */}
 
